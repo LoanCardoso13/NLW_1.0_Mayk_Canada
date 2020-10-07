@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% set pageId = "search-results" %}
+
+
+{% block styles %}
+    <link rel="stylesheet" href="./styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+
+    {% include "partials/page-header.html" %}
+
+    <div class="main">
+
+        {% if places.length > 0 %}
+    
+            <p><strong>{{ places.length }} points</strong> were found</p>
+            <div class="cards">
+
+            {% for place in places %}
+            <div class="card">
+                <img src="{{ place.image }}" alt="{{ place.name }}">
+                <h1>{{ place.name }}</h1>
+                <h2>{{ place.selectedItems }}</h2>
+                <p>{{ place.address }}</p>
+                <p>{{ place.address2 }}</p>
+                <p>{{ place.state }}, {{ place.city }}</p>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+
+            <p><strong>No points</strong> were found</p>
+
+        {% endif %}
+
+
+    </div>
+{% endblock content %}
+

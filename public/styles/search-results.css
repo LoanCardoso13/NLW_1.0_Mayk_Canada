@@ -1,0 +1,66 @@
+html {
+    background-color: white;
+}
+body {
+    height: 300px;
+}
+#search-results {
+    display: flex;
+    flex-direction: column;
+}
+#search-results header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    width: 90%;
+    margin: 12px auto;
+}
+#search-results header a {
+    font-size: 16px;
+    line-height: 19px;  
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#search-results header a span {
+    margin-right: 15px;
+}
+#search-results .main {
+    display: flex;
+    flex-direction: column;
+    margin: 116px 0 0 160px;
+}
+#search-results .main p {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--sooth-color);
+}
+#search-results .main .cards {
+    margin-top: 24px;
+    margin-bottom: 143px;
+    display: flex;
+}
+#search-results .main .cards .card {
+    margin-right: 32px;
+}
+#search-results .main .cards .card img {
+    width: 352px;
+    height: 198px;
+    border-radius: 8px 8px 0 0;
+}
+#search-results .main .cards .card h1 {
+    font-size: 36px;
+    line-height: 41px;
+}
+#search-results .main .cards .card h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--primary-color);
+}
+#search-results .main .cards .card p {
+    margin: 5px 0;
+}
