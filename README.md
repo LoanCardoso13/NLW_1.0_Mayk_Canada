@@ -9,7 +9,7 @@ git clone https://github.com/LoanCardoso13/NLW_1.0_Mayk_Canada.git
 2. Change the working directory
 
 ```bash
-cd NLW_1.0_Mayk_2
+cd NLW_1.0_Mayk_Canada
 ```
 
 3. Install dependencies
