@@ -4,7 +4,7 @@ const server = express();
 const db = require("./database/db")
 
 const nunjucks = require("nunjucks");
-const { query } = require("express");
+// const { query } = require("express");
 nunjucks.configure('src/views', {
     express: server,
     noCache: true
